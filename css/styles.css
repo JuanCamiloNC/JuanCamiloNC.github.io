@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.show-icon{
+    display: none;
+}
+header{
+    background-color: white;
+    margin: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+footer{
+    color: white;
+    background-color: black;
+    padding-bottom: 10px;
+}
+.parrafo{
+    margin: 10px;
+    padding: 20px;
+}
+/*-------------------------Cabecera------------------------*/
+.f_cabeza{
+    padding-top: 19px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.f_cabeza img{
+    height: 100px;
+}
+.f_cabeza ul li{
+    list-style: none;
+    display: inline-flex;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.f_cabeza ul li a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    margin: 16px 10px 0px 10px;
+}
+.f_cabeza ul li a:hover{
+    background-color: black;
+    color: orangered;
+    padding: 10px;
+    border-radius: 13px;
+    box-shadow: 10px 10px 10px;
+    transition: all 0.3s linear;
+}
+.contenedor1{
+    margin: 5% 1%;
+    padding: 5px;
+    
+}
+/*------------------------Obcion de planes---------------------------------*/
+.contenedor2{
+    margin: 10% 5%;
+    display: inline-block;
+}
+.contenedor2 section{
+    display: inline-block;
+    max-width: 300px;
+    max-height: 800px;
+    border: 2px solid black;
+    margin:10px 45px;
+    border-radius: 15px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor2 section:hover{
+    border: 2px solid orangered;
+}
+.contenedor2 section div div p:hover{
+    background-color: black;
+    color: orangered;
+    border: 2px solid orangered;
+}
+.contenedor2 div img{
+    height: 150px;
+    width: 250px;
+    padding: 15px;
+}
+.contenedor2 div button{
+    background-color: orangered;
+    border-radius: 15px;
+    margin-left: 34%;
+    margin-top: 10px;
+    padding: 10px 30px;
+}
+.contenedor2 div button:hover{
+    box-shadow: 5px 5px 10px;
+    background-color: black;
+    color: orangered;
+}
+.contenedor2 div div p{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom:10px ;
+}
+.contenedor2 div img{
+    margin:10px;
+}
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 20%;
+}
+/*------------------------slider-----------------------*/
+#c-slider{
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+#slider{
+    display: flex;
+    width: 400%;
+}
+#slider section{
+    width: 100%;
+}
+#slider img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.imagenes2{
+    border-radius: 15px;
+}
+#btn-1{
+    color: white;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    line-height: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+    /*-----------------------------------*/
+    left: 10px;
+}
+#btn-1:hover{
+    background-color: orangered;
+    color: black;
+}
+#btn-2{
+    color: white;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    line-height: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    /*-----------------------------------*/
+    right: 10px;
+
+}
+#btn-2:hover{
+    background-color: orangered;
+    color: black;
+}
+
+/*-------------------responcibe cabecera-----------------------*/
+@media only screen and (max-width: 728px){
+    .f_cabeza{
+        display: flex;
+        padding: 15px;
+        justify-content: space-between;
+    }
+    .f_cabeza img{
+        height: 90px;
+    }
+    .f_cabeza ul li{
+        list-style: none;
+        display: block;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .f_cabeza ul li a {
+        color: black;
+        display: block;
+        text-decoration: none;
+        margin: 16px 10px 0px 10px;
+    }
+    .f_cabeza ul li a:hover{
+        background-color: black;
+        color: white;
+        border-radius: 13px;
+        transition: all 0.2s linear;
+    }
+    .show-icon{
+        display:block;
+        cursor: pointer;
+    }
+    .f_cabeza ul{
+        display: none;
+    }
+    .f_cabeza ul.show{
+        display: inline-flex;
+    }  
+    .contenedor2 section{
+        display: inline-block;
+        max-width: 300px;
+        max-height: 800px;
+        border: 2px solid black;
+        margin: 20px;px;
+        border-radius: 15px;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    } 
+}
